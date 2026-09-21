@@ -18,7 +18,12 @@ public class Clovek {
         this.surname = surname;
         this.age = age;
     }
+
+    public String getJe_Dospely() {
+        if (this.age>=18) {return "je dospely";}else {return "neni dospely";}
+    }
+
     public void info(){
-        System.out.printf("%s %s je ti %d let",name,surname,age);
+        System.out.printf("%s %s je ti %d let\n",name,surname,age);
     }
 }
